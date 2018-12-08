@@ -23,16 +23,17 @@ echo "export PS1=\"${PROMPT}\"" >> $PROFILE
 # Install Wocker CLI
 #
 sudo mkdir -p $BIN
-sudo wget -q -O ${BIN}/wocker https://raw.githubusercontent.com/wckr/wocker-cli/master/wocker
+sudo wget -q -O ${BIN}/wocker https://raw.githubusercontent.com/BigWhale/wocker-cli/master/wocker
 sudo chmod +x ${BIN}/wocker
 
 #
 # Pull the Wocker image & create the first container
 #
-docker pull wocker/wocker:latest
+docker pull big77whale/wocker:nginx-php72
 ID=$(docker ps -q -a -f name=wocker)
 if [ -z "$ID" ]; then
   wocker run --name wocker
 else
   wocker start wocker
 fi
+
