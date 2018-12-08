@@ -23,3 +23,8 @@ This repository provides a template Vagrantfile to create a Docker-based rapid W
 ## Copyright / License
 
 © 2015 the contributors of the Wocker project under the [MIT License](https://github.com/wckr/wocker/blob/master/LICENSE). Created and maintained by [Kite](https://github.com/ixkaito).
+
+
+## BigWhale's notes
+
+Made a switch from Apache to Nginx and upgraded PHP to 7.2. I also added support for custom structured permalinks and I added WP Rocket configuration file (still untested, but I think it should be working if you install WP Rocket plugin).
