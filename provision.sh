@@ -29,7 +29,7 @@ sudo chmod +x ${BIN}/wocker
 #
 # Pull the Wocker image & create the first container
 #
-docker pull big77whale/wocker:nginx-php72
+docker pull big77whale/wocker:nginx-php73
 ID=$(docker ps -q -a -f name=default)
 if [ -z "$ID" ]; then
   wocker run --name default
