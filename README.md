@@ -27,4 +27,7 @@ This repository provides a template Vagrantfile to create a Docker-based rapid W
 
 ## BigWhale's notes
 
-Made a switch from Apache to Nginx and upgraded PHP to 7.2. I also added support for custom structured permalinks and I added WP Rocket configuration file (still untested, but I think it should be working if you install WP Rocket plugin).
+Made a switch from Apache to Nginx and upgraded PHP to 7.3. I also added support for custom structured permalinks and I added WP Rocket configuration file (still untested, but I think it should be working if you install WP Rocket plugin).
+
+Underlying base-image was dropped and replaced with single Ubuntu image.
+
